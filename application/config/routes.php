@@ -54,3 +54,5 @@ $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 $route['sleep'] = 'First/zzz';
 $route['last'] = '/last/Welcome/index';
+$route['lock/(:any)/(:any)'] = "welcome/shucks";
+$route['show/(:num)'] = 'First/gimme/$1';
