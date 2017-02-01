@@ -20,21 +20,14 @@ class Welcome extends Application
 
 		// build the list of authors, to pass on to our view
 		$source = $this->quotes->all();
-		$authors = array ();
-		foreach ($source as $record)
-		{
-			$authors[] = array ('who' => $record['who'], 'mug' => $record['mug'], 'href' => $record['where']);
-		}
-		$this->data['authors'] = $authors;
-
-		$this->render();
-	}
-
-	public function shucks() 
-	{
-			$src = $this->quotes->all();
-            $quoteArray = $this->quotes->get('2');
-            echo $quoteArray['what'];
+//		$authors = array ();
+//		foreach ($source as $record)
+//		{
+//                    $record = $this->quotes->get('6');
+//                    echo $record['what'];
+//		}
+                $record = $this->quotes->get('6');
+                    echo $record['what'];
 	}
 
 }
