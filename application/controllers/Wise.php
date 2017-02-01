@@ -2,7 +2,7 @@
 
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Welcome extends Application
+class Wise extends Application
 {
 
 	function __construct()
@@ -30,11 +30,10 @@ class Welcome extends Application
 		$this->render();
 	}
 
-	public function shucks() 
+	public function bingo()
 	{
-			$src = $this->quotes->all();
-            $quoteArray = $this->quotes->get('2');
-            echo $quoteArray['what'];
+		$src = $this->quotes->all();
+        $quoteArray = $this->quotes->get('6');
+        echo $quoteArray['what'];
 	}
-
 }
